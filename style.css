@@ -1,60 +1,174 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #e09eff;
+  letter-spacing: 0.5px;
+  line-height: 180%;
+  text-align: justify;
+  overflow: hidden;
+  margin: 0;
+  background-size: fill;
+  background-image: url(https://images.pexels.com/photos/663487/pexels-photo-663487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+div {
+  display: block;
+}
+
+.container {
+  position: fixed;
+  width: 1000000px;
+  height: 1000000px;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(7px); /* Apply the blur effect to the parent container */
+}
+
+.bordero {
+  width: 1000px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -300px;
+  z-index: 99;
+}
+
+.border1{
+    border-radius: 80px 0px 0px 0px;
+    width: 980px;
+    height: 580px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -290px;
+    margin-left: -491px;
+    z-index: 1!important;
+    overflow: hidden;
+    background: #55465f;
+    border: 1px solid #6f5974;
+}
+
+.border2{
+    width: 940px;
+    height: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -270px;
+    margin-left: -471px;
+    z-index: 1!important;
+    background: #55465f;
+    border: 1px solid #6f5974;
+    overflow: hidden;
+    border-radius: 60px 0px 0px 0px;
+}
+
+.side {
+  width: 410px;
+  height: 540px;
+  position: absolute;
+  bottom: 0;
+  background-color: #55465f;
+  overflow: hidden;
+  border-right: 1px solid #6f5974;
+}
+
+.img {
+  width: 410px;
+  height: 540px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover; 
+  background-image: url(https://images.pexels.com/photos/7031674/pexels-photo-7031674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+}
+
+
+.img img {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+.sunny-image {
+  background-image: url('https://images.pexels.com/photos/912364/pexels-photo-912364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.cloudy-image {
+  background-image: url('https://images.pexels.com/photos/414659/pexels-photo-414659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.rainy-image {
+  background-image: url('https://images.pexels.com/photos/125510/pexels-photo-125510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.snowy-image {
+  background-image: url('https://images.pexels.com/photos/1710352/pexels-photo-1710352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+
+
+
+.memain{
+    top:0px;
+    width: 529px;
+    height: 540px;
+    overflow: hidden;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    margin-top: -269px;
+    margin-left: -59px;
+    z-index: 99;
+    
+}
+
+h1{
+  margin-bottom: 20px;
+  align-items: center;
+}
   
-  h1 {
-    text-align: center;
-  }
   
-  form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-  }
-  
-  button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  #weather-info {
-    text-align: center;
-  }
-  
-  #weather-info p {
-    font-size: 18px;
-  }
-  
-  #weather-info .temperature {
-    font-size: 48px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  #weather-info .description {
-    font-size: 24px;
-    margin-top: 5px;
-  }
-  
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+input[type="text"] {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #6f5974;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  display: none;
+ 
+}
+
+#weather-info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#weather-info p {
+  font-size: 20px;
+}
+
+#weather-info .temperature {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#weather-info .description {
+  font-size: 24px;
+  margin-top: 5px;
+}
